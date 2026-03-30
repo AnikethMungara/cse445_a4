@@ -19,9 +19,9 @@ namespace ConsoleApp1
 
     public class Submission
     {
-        public static string xmlURL = "Your XML URL";
-        public static string xmlErrorURL = "Your Error XML URL";
-        public static string xsdURL = "Your XSD URL";
+        public static string xmlURL = "EDIT_XML_URL_HERE";
+        public static string xmlErrorURL = "EDIT_ERROR_XML_URL_HERE";
+        public static string xsdURL = "EDIT_XSD_URL_HERE";
 
         public static void Main(string[] args)
         {
@@ -40,12 +40,50 @@ namespace ConsoleApp1
         // Q2.1
         public static string Verification(string xmlUrl, string xsdUrl)
         {
-            //return "No Error" if XML is valid. Otherwise, return the desired exception message.
+            try
+            {
+                string xsdContent = DownloadContent(xsdUrl);
+                XmlSchemaSet schemas = new XmlSchemaSet();
+                schemas.Add(null, XmlReader.Create(new StringReader(xsdContent)));
+
+                string xmlContent = DownloadContent(xmlUrl);
+
+                XmlReaderSettings settings = new XmlReaderSettings();
+                settings.ValidationType = ValidationType.Schema;
+                settings.Schemas = schemas;
+
+                string errors = "";
+
+                settings.ValidationEventHandler += (sender, e) =>
+                {
+                    if (errors != "")
+                        errors += "\n";
+                    errors += e.Message;
+                };
+
+                using (XmlReader reader = XmlReader.Create(new StringReader(xmlContent), settings))
+                {
+                    while (reader.Read()) { }
+                }
+
+                if (errors == "")
+                    return "No errors are found";
+                else
+                    return errors;
+            }
+            catch (Exception ex)
+            {
+                return ex.Message;
+            }
         }
 
         public static string Xml2Json(string xmlUrl)
         {
-            // The returned jsonText needs to be de-serializable by Newtonsoft.Json package. (JsonConvert.DeserializeXmlNode(jsonText))
+            string xmlContent = DownloadContent(xmlUrl);
+            XmlDocument doc = new XmlDocument();
+            doc.LoadXml(xmlContent);
+            string jsonText = JsonConvert.SerializeXmlNode(doc, Newtonsoft.Json.Formatting.Indented, true);
+            return jsonText;
         }
 
         // Helper method to download content from URL
