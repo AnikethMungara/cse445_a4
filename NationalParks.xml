@@ -13,6 +13,7 @@
       <Zip>86023</Zip>
     </Address>
   </NationalPark>
+
   <NationalPark Rating="4.8">
     <Name>Yellowstone</Name>
     <Phone>307-344-7381</Phone>
@@ -25,6 +26,7 @@
       <Zip>82190</Zip>
     </Address>
   </NationalPark>
+
   <NationalPark>
     <Name>Yosemite</Name>
     <Phone>209-372-0200</Phone>
@@ -36,6 +38,7 @@
       <Zip>95389</Zip>
     </Address>
   </NationalPark>
+
   <NationalPark Rating="4.7">
     <Name>Zion</Name>
     <Phone>435-772-3256</Phone>
@@ -48,6 +51,7 @@
       <Zip>84767</Zip>
     </Address>
   </NationalPark>
+
   <NationalPark>
     <Name>Rocky Mountain</Name>
     <Phone>970-586-1206</Phone>
@@ -59,6 +63,7 @@
       <Zip>80517</Zip>
     </Address>
   </NationalPark>
+
   <NationalPark Rating="4.8">
     <Name>Glacier</Name>
     <Phone>406-888-7800</Phone>
@@ -70,6 +75,7 @@
       <Zip>59936</Zip>
     </Address>
   </NationalPark>
+
   <NationalPark>
     <Name>Acadia</Name>
     <Phone>207-288-3338</Phone>
@@ -82,6 +88,7 @@
       <Zip>04609</Zip>
     </Address>
   </NationalPark>
+
   <NationalPark Rating="4.6">
     <Name>Great Smoky Mountains</Name>
     <Phone>865-436-1200</Phone>
@@ -93,6 +100,7 @@
       <Zip>37738</Zip>
     </Address>
   </NationalPark>
+
   <NationalPark>
     <Name>Joshua Tree</Name>
     <Phone>760-367-5500</Phone>
@@ -104,6 +112,7 @@
       <Zip>92277</Zip>
     </Address>
   </NationalPark>
+
   <NationalPark Rating="4.7">
     <Name>Bryce Canyon</Name>
     <Phone>435-834-5322</Phone>
@@ -115,6 +124,7 @@
       <Zip>84764</Zip>
     </Address>
   </NationalPark>
+
   <NationalPark>
     <Name>Arches</Name>
     <Phone>435-719-2299</Phone>
