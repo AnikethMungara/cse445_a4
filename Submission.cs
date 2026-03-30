@@ -19,9 +19,9 @@ namespace ConsoleApp1
 
     public class Submission
     {
-        public static string xmlURL = "EDIT_XML_URL_HERE";
-        public static string xmlErrorURL = "EDIT_ERROR_XML_URL_HERE";
-        public static string xsdURL = "EDIT_XSD_URL_HERE";
+        public static string xmlURL = "https://raw.githubusercontent.com/AnikethMungara/cse445_a4/main/NationalParks.xml";
+        public static string xmlErrorURL = "https://raw.githubusercontent.com/AnikethMungara/cse445_a4/main/NationalParksErrors.xml";
+        public static string xsdURL = "https://raw.githubusercontent.com/AnikethMungara/cse445_a4/main/NationalParks.xsd";
 
         public static void Main(string[] args)
         {

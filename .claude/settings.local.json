@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(curl -s \"https://raw.githubusercontent.com/AnikethMungara/cse445_a4/main/NationalParksErrors.xml\")",
+      "Bash(curl -s \"https://raw.githubusercontent.com/AnikethMungara/cse445_a4/main/NationalParks.xsd\")",
+      "Bash(curl -s \"https://raw.githubusercontent.com/AnikethMungara/cse445_a4/main/NationalParks.xml\")"
+    ]
+  }
+}
