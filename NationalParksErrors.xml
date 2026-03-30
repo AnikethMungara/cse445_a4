@@ -67,7 +67,8 @@
       <City>West Glacier</City>
       <State>MT</State>
       <Zip>59936</Zip>
-    
+      <Country>USA</Country>
+    </Address>
   </NationalPark>
   <NationalPark>
     <Name>Acadia</Name>
